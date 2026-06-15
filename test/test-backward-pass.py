@@ -21,7 +21,7 @@ m = mlp(len(x), [4, 4, 1])
 learning_rate = 0.001
 acceptable_loss = 0.00001
 
-print(f"\nparameters before training: \n {m.parameters()}\n\n")
+# print(f"\nparameters before training: \n {m.parameters()}\n\n")
 
 while True:
     ypred = [m(x) for x in xs]
@@ -31,10 +31,12 @@ while True:
     loss = mse_loss.calculate_loss()
     loss.backward()
 
-    print(f"current loss is {loss.data}")
+    # print(f"current loss is {loss.data}")
     if loss.data <= acceptable_loss:
-        print(f"\n\n final predictions are :\n {[d.data for d in ypred]}\n")
-        print(f"\n\nthe trained parameters are: \n {m.parameters()}")
+
+        print(f"desired output :\n{ys}")
+        print(f"\n\noutput after training :\n{[d.data for d in ypred]}\n")
+        # print(f"\n\nthe trained parameters are: \n {m.parameters()}")
         break
 
     optimization = optimize(m.parameters())
