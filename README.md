@@ -1,3 +1,5 @@
+#### Disclaimer ####
+
 I am creating this project as an exercise on my way to learn neural networks, deep learning, etc.
 
 This project contains a simple neural network (to be created) and a simple implementation of backwards and forwards propagation in a neural network.
@@ -9,3 +11,23 @@ I hope to increase the number of mathematical operations in future.
 This project is not being created as a replacement or competition to pytorch and tensor flow. It is just for me to practice. 
 
 Use pytorch or tensor flow for serious work.
+
+#### What I aim to achieve with this project ####
+
+This project is my implementation of a small part of pytorch library or my take on micrograd library by Andrej Karpathy as I am learning neural networks from him.
+
+With this project I am able to train a simple 41 parameter neural network to predict numbers accurately based on some test data.
+
+You can try running test-predictions.py file to checkout the results for yourself.
+
+#### How I wish to expand upon this project ####
+
+In future I wish to add more activation functions. Right now we have only tanh as activation function.
+
+In future I might mould this project to predict some more things apart from just numbers. But that'll have to wait.
+
+#### What you can do with this project ####
+
+Clone it, modify it.
+
+Thanks for checking out my project.
