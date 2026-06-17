@@ -6,8 +6,8 @@ from neuron.neuron import *
 
 class layer:
     
-    def __init__(self, nin, nout):
-        self.neurons = [neuron(nin) for _ in range(nout)]
+    def __init__(self, nin, nout, **kwargs):
+        self.neurons = [neuron(nin, **kwargs) for _ in range(nout)]
 
     def __call__(self, x):
         out = [n(x) for n in self.neurons]

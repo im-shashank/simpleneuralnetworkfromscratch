@@ -78,7 +78,8 @@ class value:
     
     def tanh(self):
         x = self.data
-        t = (math.exp(2*x) - 1) / (math.exp(2*x) + 1)
+        # t = (math.exp(2*x) - 1) / (math.exp(2*x) + 1)
+        t = math.tanh(x)
         out = value (t, (self,))
 
         def backwards():
