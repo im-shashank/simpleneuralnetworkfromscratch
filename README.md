@@ -61,3 +61,18 @@ A forward pass test
 A simple prediction test
 
 A quadrictic equation prediction test
+
+```text
+Iteration 9200 | Loss: 0.002186160534238945
+Iteration 9300 | Loss: 0.0021746214919922597
+Iteration 9400 | Loss: 0.0021630348760088443
+Iteration 9500 | Loss: 0.0021517049148426755
+Iteration 9600 | Loss: 0.002140601880534238
+Iteration 9700 | Loss: 0.002129707439662365
+Iteration 9800 | Loss: 0.002119039218067881
+Iteration 9900 | Loss: 0.0021085482585661017
+Iteration 10000 | Loss: 0.002098247116354708
+
+--- Results ---
+Prediction for x=20: 399.60 (Expected: 400.00)
+```
